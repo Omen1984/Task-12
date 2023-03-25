@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/spring_hiber?verifyServerCertificate'
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    hidden-method:
+      filter:
+        enabled: true
+server:
+  port: '8088'
+
+#настройка cors
+allowed:
+  origin: 'http://localhost:63342/, http://localhost:8088/'
